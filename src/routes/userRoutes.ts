@@ -1,22 +1,21 @@
 import { Router } from "express";
 import userController from "../controllers/userController";
-import AuthMiddlewares from "../middlewares/authMiddlewares";
 
 const userRouter = Router();
 
 // Listar todos os usuários
-userRouter.get("/api/users", AuthMiddlewares, userController.getUsers);
+userRouter.get("/api/users", userController.getUsers);
 
 // Buscar um usuário por ID
-userRouter.get("/api/user/:id", AuthMiddlewares, userController.getUserById);
+userRouter.get("/api/user/:id", userController.getUserById);
 
 // Criar novo usuário
-userRouter.post("/api/user", AuthMiddlewares, userController.createUser);
+userRouter.post("/api/user", userController.createUser);
 
 // Atualizar usuário existente
-userRouter.patch("/api/user/:id", AuthMiddlewares, userController.updateUser);
+userRouter.patch("/api/user/:id", userController.updateUser);
 
 // Deletar usuário
-userRouter.delete("/api/user/:id", AuthMiddlewares, userController.deleteUser);
+userRouter.delete("/api/user/:id", userController.deleteUser);
 
 export default userRouter;
