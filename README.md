@@ -5,6 +5,12 @@ Este projeto começou como um estudo, mas será futuramente expandido com uma in
 
 ---
 
+## Landing Page
+
+[landing page](https://user-posts-api-ten.vercel.app/)
+
+---
+
 ## 🚀 Tecnologias utilizadas
 
 - [Node.js](https://nodejs.org/)
