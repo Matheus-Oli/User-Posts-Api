@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Documentação API - User Posts</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <h1 class="header__title">Documentação da API User Posts</h1>
+      <p class="header__subtitle">API completa para gerenciamento de usuários e posts</p>
+    </header>
+
+    <main class="api-docs">
+      <section class="section">
+        <div class="section__header">
+          <span class="section__icon">👥</span>
+          <h2>Rotas de Usuários</h2>
+        </div>
+        <ul class="routes">
+          <li class="routes__item">
+            <span class="routes__method">GET</span>
+            <span class="routes__path">/users</span>
+            <span class="routes__description">Lista todos os usuários</span>
+          </li>
+          <li class="routes__item">
+            <span class="routes__method">GET</span>
+            <span class="routes__path">/users/:id</span>
+            <span class="routes__description">Busca um usuário por ID</span>
+          </li>
+          <li class="routes__item">
+            <span class="routes__method">POST</span>
+            <span class="routes__path">/users</span>
+            <span class="routes__description">Cria um novo usuário</span>
+          </li>
+          <li class="routes__item">
+            <span class="routes__method">PUT</span>
+            <span class="routes__path">/users/:id</span>
+            <span class="routes__description">Atualiza um usuário existente</span>
+          </li>
+          <li class="routes__item">
+            <span class="routes__method">DELETE</span>
+            <span class="routes__path">/users/:id</span>
+            <span class="routes__description">Remove um usuário</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <div class="section__header">
+          <span class="section__icon">📝</span>
+          <h2>Rotas de Posts</h2>
+        </div>
+        <ul class="routes">
+          <li class="routes__item">
+            <span class="routes__method">GET</span>
+            <span class="routes__path">/posts</span>
+            <span class="routes__description">Lista todos os posts</span>
+          </li>
+          <li class="routes__item">
+            <span class="routes__method">GET</span>
+            <span class="routes__path">/posts/:id</span>
+            <span class="routes__description">Busca um post por ID</span>
+          </li>
+          <li class="routes__item">
+            <span class="routes__method">POST</span>
+            <span class="routes__path">/posts</span>
+            <span class="routes__description">Cria um novo post</span>
+          </li>
+          <li class="routes__item">
+            <span class="routes__method">PUT</span>
+            <span class="routes__path">/posts/:id</span>
+            <span class="routes__description">Atualiza um post existente</span>
+          </li>
+          <li class="routes__item">
+            <span class="routes__method">DELETE</span>
+            <span class="routes__path">/posts/:id</span>
+            <span class="routes__description">Remove um post</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <div class="section__header">
+          <span class="section__icon">🛠️</span>
+          <h2>Tecnologias Utilizadas</h2>
+        </div>
+        <ul class="tech-list">
+          <li class="tech-list__item">
+            <h3 class="tech-list__name">Node.js</h3>
+            <p class="tech-list__description">Runtime JavaScript para o backend</p>
+          </li>
+          <li class="tech-list__item">
+            <h3 class="tech-list__name">Express.js</h3>
+            <p class="tech-list__description">Framework web rápido e minimalista</p>
+          </li>
+          <li class="tech-list__item">
+            <h3 class="tech-list__name">Prisma</h3>
+            <p class="tech-list__description">ORM moderno para banco de dados</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <div class="section__header">
+          <span class="section__icon">📁</span>
+          <h2>Estrutura do Projeto</h2>
+        </div>
+        <ul class="structure">
+          <li class="structure__item">
+            <p class="structure__path">/src/controllers/</p>
+            <p class="structure__description">Controladores da aplicação (postController.ts, userController.ts)</p>
+          </li>
+          <li class="structure__item">
+            <p class="structure__path">/src/routes/</p>
+            <p class="structure__description">Definição das rotas (postRoutes.ts, userRoutes.ts)</p>
+          </li>
+          <li class="structure__item">
+            <p class="structure__path">/src/services/</p>
+            <p class="structure__description">Lógica de negócio (postService.ts, userService.ts)</p>
+          </li>
+          <li class="structure__item">
+            <p class="structure__path">/src/lib/</p>
+            <p class="structure__description">Bibliotecas e utilitários</p>
+          </li>
+          <li class="structure__item">
+            <p class="structure__path">/prisma/</p>
+            <p class="structure__description">Configurações do Prisma ORM</p>
+          </li>
+          <li class="structure__item">
+            <p class="structure__path">/public/</p>
+            <p class="structure__description">Arquivos estáticos públicos</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <div class="section__header">
+          <span class="section__icon">⚙️</span>
+          <h2>Configuração</h2>
+        </div>
+        <ul class="structure">
+          <li class="structure__item">
+            <p class="structure__path">server.ts</p>
+            <p class="structure__description">Configuração principal do servidor Express</p>
+          </li>
+          <li class="structure__item">
+            <p class="structure__path">tsconfig.json</p>
+            <p class="structure__description">Configuração do TypeScript</p>
+          </li>
+          <li class="structure__item">
+            <p class="structure__path">package.json</p>
+            <p class="structure__description">Dependências e scripts do projeto</p>
+          </li>
+          <li class="structure__item">
+            <p class="structure__path">.prettierrc</p>
+            <p class="structure__description">Configuração de formatação de código</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__text">
+        Desenvolvido por Matheus Oliveira do Nascimento
+      </p>
+      <p class="footer__text">
+        Projeto no GitHub: <a href="https://github.com/Matheus-Oli/User-Posts-Api" target="_blank" rel="noopener noreferrer" class="footer__link">User-Posts-Api</a>
+      </p>
+    </footer>
+  </div>
+</body>
+</html>
